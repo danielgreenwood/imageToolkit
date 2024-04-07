@@ -108,6 +108,10 @@ This function trains a keras CNN model on a folder of n-dimensional images and r
 <dd><p>Specify the names of the channels that should be read into the model</p></dd>
 
 
+<dt>batch_size</dt>
+<dd><p>Batch size</p></dd>
+
+
 <dt>scale</dt>
 <dd><p>Manually specify number to divide pixel values by</p></dd>
 
@@ -116,12 +120,24 @@ This function trains a keras CNN model on a folder of n-dimensional images and r
 <dd><p>Log scale intensity values</p></dd>
 
 
+<dt>featurewise_standardisation</dt>
+<dd><p>Argument passed to image generator</p></dd>
+
+
+<dt>imagewise_normalisation</dt>
+<dd><p>Argument passed to image generator</p></dd>
+
+
+<dt>subsample_training_data</dt>
+<dd><p>Argument passed to image generator</p></dd>
+
+
 <dt>early_stopping</dt>
 <dd><p>Stop the training early once the loss function stabilises</p></dd>
 
 
 <dt>...</dt>
-<dd></dd>
+<dd><p>Other image normalsiation arguments</p></dd>
 
 </dl></div>
     <div class="section level2">
