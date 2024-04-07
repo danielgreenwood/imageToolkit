@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN status](https://www.r-pkg.org/badges/version/imageToolkit)](https://CRAN.R-project.org/package=imageToolkit)
+[![R-CMD-check](https://github.com/beansprout88/imageToolkit/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/beansprout88/imageToolkit/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/beansprout88/imageToolkit/branch/master/graph/badge.svg)](https://app.codecov.io/gh/beansprout88/imageToolkit?branch=master)
 <!-- badges: end -->
 
 The goal of imageToolkit is to ...
