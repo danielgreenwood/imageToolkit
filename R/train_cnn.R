@@ -155,7 +155,7 @@ train_cnn <-
     training_image_names = image_list[-(1:validation_elements)]
 
     # setup data import
-    training_datagen = image_data_generator(
+    training_datagen = keras::image_data_generator(
       #samplewise_center = TRUE,
       #samplewise_std_normalization = TRUE,
       rotation_range = 180,
@@ -165,7 +165,7 @@ train_cnn <-
 
     )
 
-    validation_datagen = image_data_generator()
+    validation_datagen = keras::image_data_generator()
 
     training_images = flow_images_from_data(
       training_images_array,
@@ -174,7 +174,7 @@ train_cnn <-
       batch_size = batch_size
     )
 
-    validation_images = flow_images_from_data(validation_images_array,
+    validation_images = keras::flow_images_from_data(validation_images_array,
                                               y = validation_labels,
                                               generator = validation_datagen)
 
