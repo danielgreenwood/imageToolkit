@@ -28,10 +28,16 @@
     <loc>https://beansprout88.github.io/imageToolkit/reference/index.html</loc>
   </url>
   <url>
+    <loc>https://beansprout88.github.io/imageToolkit/reference/interactive_data_select.html</loc>
+  </url>
+  <url>
     <loc>https://beansprout88.github.io/imageToolkit/reference/pipe.html</loc>
   </url>
   <url>
     <loc>https://beansprout88.github.io/imageToolkit/reference/plot_confusion.html</loc>
+  </url>
+  <url>
+    <loc>https://beansprout88.github.io/imageToolkit/reference/plot_intensity_2d.html</loc>
   </url>
   <url>
     <loc>https://beansprout88.github.io/imageToolkit/reference/train_cnn.html</loc>
