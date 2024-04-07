@@ -1,9 +1,9 @@
 Package: imageToolkit
-Title: What the Package Does (One Line, Title Case)
+Title: Toolkit for analysis of biological imaging data from high content microscopy
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Daniel", "Greenwood", ,"daniel@tangle.org.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7407-506X"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Suggests: 
