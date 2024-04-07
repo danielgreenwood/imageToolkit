@@ -1,10 +1,10 @@
 
 #' Interactive plot of 2d intensity data
 #'
-#' @param data
-#' @param channel_1
-#' @param channel_2
-#' @param bins
+#' @param data data
+#' @param channel_1 channel 1
+#' @param channel_2 channel 2
+#' @param bins Number of bins
 #' @param plot_all If FALSE, takes subsample of 500,000 data points to plot
 #' @param plotly Make plot interactive using plotly
 #'

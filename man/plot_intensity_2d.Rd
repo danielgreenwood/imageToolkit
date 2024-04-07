@@ -14,6 +14,14 @@ plot_intensity_2d(
 )
 }
 \arguments{
+\item{data}{data}
+
+\item{channel_1}{channel 1}
+
+\item{channel_2}{channel 2}
+
+\item{bins}{Number of bins}
+
 \item{plot_all}{If FALSE, takes subsample of 500,000 data points to plot}
 
 \item{plotly}{Make plot interactive using plotly}
