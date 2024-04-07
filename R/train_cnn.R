@@ -1,5 +1,5 @@
 #' Train a CNN on a directory of images
-#' This function trains a keras CNN model on a folder of n-dimensional images and reurns the trained model together with validation data
+#' This function trains a keras CNN model on a folder of n-dimensional images and returns the trained model together with validation data
 #' @param model A keras CNN model
 #' @param image_directory The directory containing folders of images named by class
 #' @param image_list Alternatively, a list of pre-loaded crops may be supplied
@@ -11,16 +11,14 @@
 #' @param batch_size Batch size
 #' @param scale Manually specify number to divide pixel values by
 #' @param log_scale Log scale intensity values
-#' @param featurewise_standardisation
-#' @param imagewise_normalisation
-#' @param subsample_training_data
+#' @param featurewise_standardisation Argument passed to image generator
+#' @param imagewise_normalisation Argument passed to image generator
+#' @param subsample_training_data Argument passed to image generator
 #' @param early_stopping Stop the training early once the loss function stabilises
 #' @param ... Other image normalsiation arguments
 #'
 #' @return Returns a list containing a trained keras model, training history, confusion matrix (from validation images), validation image predictions and names
 #' @export
-#'
-#' @examples
 train_cnn <-
   function(model,
            image_directory = NULL,
@@ -137,7 +135,7 @@ train_cnn <-
           # Center
           images_array[j, , , i] = images_array[j, , , i] - mean(images_array[j, , , i])
           # Normalise SD
-          images_array[j, , , i] = images_array[j, , , i] / sd(images_array[j, , , i])
+          images_array[j, , , i] = images_array[j, , , i] / stats::sd(images_array[j, , , i])
         }
       }
     }
@@ -233,7 +231,6 @@ train_cnn <-
         history = history,
         confusion_matrix = confusion_matrix,
         validation_predictions = predictions,
-        rescale_vector = rescale_vector,
         validation_predictions = predictions,
         validation_image_names = validation_image_names,
         training_image_names = training_image_names

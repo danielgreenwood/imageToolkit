@@ -41,13 +41,21 @@ train_cnn(
 
 \item{channels}{Specify the names of the channels that should be read into the model}
 
+\item{batch_size}{Batch size}
+
 \item{scale}{Manually specify number to divide pixel values by}
 
 \item{log_scale}{Log scale intensity values}
 
+\item{featurewise_standardisation}{Argument passed to image generator}
+
+\item{imagewise_normalisation}{Argument passed to image generator}
+
+\item{subsample_training_data}{Argument passed to image generator}
+
 \item{early_stopping}{Stop the training early once the loss function stabilises}
 
-\item{...}{}
+\item{...}{Other image normalsiation arguments}
 }
 \value{
 Returns a list containing a trained keras model, training history, confusion matrix (from validation images), validation image predictions and names
