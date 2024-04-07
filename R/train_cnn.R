@@ -8,14 +8,14 @@
 #' @param weight_classes Should the loss function be weighted to account for unbalanced classes
 #' @param sub_cropsize If the images should be further cropped, specify the number of pixels
 #' @param channels Specify the names of the channels that should be read into the model
-#' @param batch_size
+#' @param batch_size Batch size
 #' @param scale Manually specify number to divide pixel values by
 #' @param log_scale Log scale intensity values
 #' @param featurewise_standardisation
 #' @param imagewise_normalisation
 #' @param subsample_training_data
 #' @param early_stopping Stop the training early once the loss function stabilises
-#' @param ...
+#' @param ... Other image normalsiation arguments
 #'
 #' @return Returns a list containing a trained keras model, training history, confusion matrix (from validation images), validation image predictions and names
 #' @export
