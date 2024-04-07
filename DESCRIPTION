@@ -19,6 +19,7 @@ Imports:
     dplyr,
     ijtiff,
     keras,
+    magrittr,
     progress,
     stats,
     stringr

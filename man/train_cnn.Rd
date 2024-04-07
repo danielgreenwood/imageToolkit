@@ -3,7 +3,7 @@
 \name{train_cnn}
 \alias{train_cnn}
 \title{Train a CNN on a directory of images
-This function trains a keras CNN model on a folder of n-dimensional images and reurns the trained model together with validation data}
+This function trains a keras CNN model on a folder of n-dimensional images and returns the trained model together with validation data}
 \usage{
 train_cnn(
   model,
@@ -62,5 +62,5 @@ Returns a list containing a trained keras model, training history, confusion mat
 }
 \description{
 Train a CNN on a directory of images
-This function trains a keras CNN model on a folder of n-dimensional images and reurns the trained model together with validation data
+This function trains a keras CNN model on a folder of n-dimensional images and returns the trained model together with validation data
 }
