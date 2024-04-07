@@ -9,13 +9,13 @@ plot_confusion = function(confusion_table){
 
   confusion_p %>%
     ggplot2::ggplot() +
-    aes(rev(Prediction), Reference, fill = n, label = sprintf("%0.1f", n)) +
-    geom_tile() +
-    geom_text(size = 10, colour = 'white') +
+    ggplot2::aes(rev(Prediction), Reference, fill = n, label = sprintf("%0.1f", n)) +
+    ggplot2::geom_tile() +
+    ggplot2::geom_text(size = 10, colour = 'white') +
     viridis::scale_fill_viridis(direction = -1) +
-    theme_minimal() +
-    labs(x = 'Prediction') +
-    theme(legend.position = 'none')
+    ggplot2::theme_minimal() +
+    ggplot2::labs(x = 'Prediction') +
+    ggplot2::theme(legend.position = 'none')
 }
 
 
