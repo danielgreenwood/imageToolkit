@@ -21,7 +21,10 @@ Imports:
     ijtiff,
     keras,
     magrittr,
+    miniUI,
+    plotly,
     progress,
+    shiny,
     stats,
     stringr,
     viridis
