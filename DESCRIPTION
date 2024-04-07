@@ -17,9 +17,11 @@ BugReports: https://github.com/beansprout88/imageToolkit/issues
 Imports: 
     caret,
     dplyr,
+    ggplot2,
     ijtiff,
     keras,
     magrittr,
     progress,
     stats,
-    stringr
+    stringr,
+    viridis
