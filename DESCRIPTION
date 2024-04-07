@@ -16,6 +16,9 @@ URL: https://github.com/beansprout88/imageToolkit, https://beansprout88.github.i
 BugReports: https://github.com/beansprout88/imageToolkit/issues
 Imports: 
     caret,
+    dplyr,
     ijtiff,
     keras,
-    progress
+    progress,
+    stats,
+    stringr

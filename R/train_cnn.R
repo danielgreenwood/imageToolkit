@@ -50,7 +50,7 @@ train_cnn <-
       image_list = list.files(path = image_directory,
                               pattern = '.tif',
                               recursive = TRUE, full.names = TRUE)
-      image_list = image_list[str_detect(image_list, fixed(".tif"))]
+      image_list = image_list[stringr::str_detect(image_list, stringr::fixed(".tif"))]
 
     }
     cat("Found", length(image_list), "images\n")
@@ -62,7 +62,7 @@ train_cnn <-
     label_position = length(labels_list[[1]]) - 1
     labels = vector('character', length(labels_list))
     for (i in 1:length(labels)) {
-      labels[i] = nth(labels_list[[i]], label_position)
+      labels[i] = dplyr::nth(labels_list[[i]], label_position)
     }
     labels_numeric = as.numeric(factor(labels)) - 1
     labels_key = levels(factor(labels))
@@ -127,7 +127,7 @@ train_cnn <-
         # Center
         images_array[, , , i] = images_array[, , , i] - mean(images_array[, , , i])
         # Normalise SD
-        images_array[, , , i] = images_array[, , , i] / sd(images_array[, , , i])
+        images_array[, , , i] = images_array[, , , i] / stats::sd(images_array[, , , i])
       }
     }
 
@@ -209,8 +209,8 @@ train_cnn <-
           class_weight = class_weights,
           workers = 12,
           max_queue_size = 10, callbacks = list(
-            callback_early_stopping(patience = 100, restore_best_weights = T),
-            callback_reduce_lr_on_plateau(patience = 20)
+            keras::callback_early_stopping(patience = 100, restore_best_weights = T),
+            keras::callback_reduce_lr_on_plateau(patience = 20)
           )
         )
     }
