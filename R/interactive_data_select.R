@@ -36,7 +36,7 @@ interactive_data_select <-
 
     }
 
-    miniUI::runGadget(ui, server)
+    shiny::runGadget(ui, server)
 
   }
 
