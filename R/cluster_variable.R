@@ -13,8 +13,8 @@ cluster_variable <- function(df, cluster_var1, cluster_var2, value_var, method =
 
   cluster_var1_string = (as.character(deparse(substitute(cluster_var1))))
 
-  order = dplyr::select(df, !!ensym(cluster_var1), !!ensym(cluster_var2), !!ensym(value_var)) %>%
-    dplyr::group_by(!!ensym(cluster_var1), !!ensym(cluster_var2))  %>%
+  order = dplyr::select(df, !!rlang::ensym(cluster_var1), !!rlang::ensym(cluster_var2), !!rlang::ensym(value_var)) %>%
+    dplyr::group_by(!!rlang::ensym(cluster_var1), !!rlang::ensym(cluster_var2))  %>%
     dplyr::summarise_all(mean) %>%
     tidyr::pivot_wider(names_from = !!rlang::ensym(cluster_var2), values_from = !!rlang::ensym(value_var)) %>%
     column_to_rownames(var = cluster_var1_string)  %>%

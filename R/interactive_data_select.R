@@ -18,7 +18,7 @@ interactive_data_select <-
     server = function(input, output) {
 
       output$plot <- plotly::renderPlotly({
-        p = plot_intensity_2d(data, !!ensym(channel_1),!!ensym(channel_2))
+        p = plot_intensity_2d(data, !!rlang::ensym(channel_1),!!rlang::ensym(channel_2))
         plotly::ggplotly(p) %>% plotly::layout(dragmode = 'lasso') %>% plotly::event_register("plotly_brushed")
       })
 
