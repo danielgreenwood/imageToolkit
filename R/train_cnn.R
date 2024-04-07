@@ -200,7 +200,7 @@ train_cnn <-
         )
     } else if (early_stopping){
       history = model %>%
-        fit(
+        keras::fit(
           training_images,
           epochs = epochs,
           validation_data = validation_images,
