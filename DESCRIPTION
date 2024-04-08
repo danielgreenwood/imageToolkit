@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Daniel", "Greenwood", ,"daniel@tangle.org.uk", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7407-506X"))
-Description: What the package does (one paragraph).
+Description: Functions for the analsyis of biological images, including training a CNN on n-dimensional microscopy images
 License: MIT + file LICENSE
 Suggests: 
     testthat (>= 3.0.0)
