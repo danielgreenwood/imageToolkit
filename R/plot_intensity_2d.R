@@ -20,7 +20,7 @@ plot_intensity_2d = function(data, channel_1, channel_2, bins = 500, plot_all = 
   }
 
   lim_x = data %>%
-    pull(!!ensym(channel_1)) %>%
+    dplyr::pull(!!ensym(channel_1)) %>%
     quantile(c(0.0002, 0.9998), na.rm = T)
 
   lim_y = data %>%
