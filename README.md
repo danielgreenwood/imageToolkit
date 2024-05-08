@@ -13,4 +13,6 @@ status](https://www.r-pkg.org/badges/version/imageToolkit)](https://CRAN.R-proje
 <!-- badges: end -->
 
 imageToolkit provides functions for analysing biological image data from
-high-content microscopy
+high-content microscopy.
+
+Install with `devtools::install_github("danielgreenwood/imageToolkit")`
