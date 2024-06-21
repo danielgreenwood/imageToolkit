@@ -16,3 +16,5 @@ imageToolkit provides functions for analysing biological image data from
 high-content microscopy.
 
 Install with `devtools::install_github("danielgreenwood/imageToolkit")`
+
+![image](https://github.com/danielgreenwood/imageToolkit/assets/117200027/15b40dff-8d41-4f7f-906d-711e9f133a9e)
